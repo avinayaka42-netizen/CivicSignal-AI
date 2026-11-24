@@ -1,0 +1,1102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f6fb;
+  color: #17243a;
+}
+
+.navbar {
+  background: #102544;
+  color: white;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  font-size: 32px;
+}
+
+.brand h2 {
+  font-size: 21px;
+}
+
+.brand p {
+  font-size: 12px;
+  color: #b8c9df;
+  margin-top: 4px;
+}
+
+.logout-btn {
+  background: white;
+  color: #102544;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 45px 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 35px 10px;
+}
+
+.tag {
+  color: #1769d2;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: 43px;
+  margin: 18px 0;
+}
+
+.hero h1 span {
+  color: #1769d2;
+}
+
+.hero p {
+  color: #65748b;
+  line-height: 1.7;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 25px 0;
+}
+
+.stat-card {
+  background: white;
+  padding: 24px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px #17243a0b;
+}
+
+.stat-card h3 {
+  color: #1769d2;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  color: #65748b;
+}
+
+.form-card,
+.result-card {
+  background: white;
+  padding: 32px;
+  border-radius: 14px;
+  max-width: 650px;
+  margin: 35px auto;
+  box-shadow: 0 5px 25px #17243a12;
+}
+
+.form-card h2,
+.result-card h2 {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #718096;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 17px 0 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d9e1ec;
+  border-radius: 7px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #1769d2;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 14px;
+  background: #1769d2;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  margin-top: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #1054ad;
+}
+
+.primary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.message {
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #e5f5eb;
+  color: #176b38;
+  border-radius: 8px;
+}
+
+.result-card p {
+  margin: 14px 0;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #718096;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .input-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-card {
+    padding: 22px;
+  }
+}
+
+/* MY REPORTS SECTION */
+
+.reports-section {
+  max-width: 850px;
+  margin: 45px auto;
+}
+
+.reports-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.refresh-btn {
+  background: #1769d2;
+  color: white;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.report-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.summary-card {
+  background: white;
+  padding: 22px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px #17243a0b;
+}
+
+.summary-card h3 {
+  font-size: 25px;
+  color: #1769d2;
+  margin-bottom: 8px;
+}
+
+.summary-card p {
+  color: #65748b;
+}
+
+.report-card {
+  background: white;
+  padding: 23px;
+  margin: 18px 0;
+  border-radius: 12px;
+  border-left: 5px solid #1769d2;
+  box-shadow: 0 4px 15px #17243a10;
+}
+
+.report-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.report-card h3 {
+  color: #1769d2;
+}
+
+.report-card p {
+  margin: 11px 0;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #fff2d6;
+  color: #956000;
+}
+
+.status-badge.resolved {
+  background: #e0f6e8;
+  color: #176b38;
+}
+
+.status-badge.in-progress {
+  background: #e3efff;
+  color: #1769d2;
+}
+
+.status-badge.rejected {
+  background: #ffe5e5;
+  color: #b42318;
+}
+
+.empty-reports {
+  background: white;
+  padding: 30px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 12px;
+  color: #65748b;
+}
+
+@media (max-width: 600px) {
+  .report-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .reports-heading {
+    align-items: flex-start;
+  }
+}
+
+/* =====================================
+   CITIZEN LOGIN AND REGISTRATION
+===================================== */
+
+select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d9e1ec;
+  border-radius: 7px;
+  font-size: 14px;
+  background: white;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+select:focus {
+  border-color: #1769d2;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 22px;
+  color: #65748b;
+  font-size: 14px;
+}
+
+.auth-switch button {
+  background: none;
+  border: none;
+  color: #1769d2;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+.auth-switch button:hover {
+  text-decoration: underline;
+}
+
+.primary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* CIVIC ISSUES MAP */
+
+.issue-map-section {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.civic-issues-map {
+  width: 100%;
+  height: 450px;
+  margin-top: 20px;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.custom-map-marker {
+  background: transparent;
+  border: none;
+}
+
+
+
+/* CIVIC ISSUE ANALYTICS */
+
+.analytics-section {
+  margin: 30px 0;
+}
+
+.analytics-heading {
+  margin-bottom: 20px;
+}
+
+.analytics-heading h2 {
+  margin-bottom: 8px;
+}
+
+.analytics-heading p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.analytics-heading h3 {
+  margin-top: 12px;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.analytics-card {
+  background: #fff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  min-width: 0;
+}
+
+.analytics-card h3 {
+  margin-bottom: 18px;
+}
+
+@media (max-width: 768px) {
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* DUPLICATE ISSUE WARNING */
+
+.duplicate-warning {
+  background: #fff8e6;
+  border: 1px solid #f0c36d;
+  border-left: 5px solid #e49b16;
+  padding: 22px;
+  border-radius: 12px;
+  margin: 25px 0;
+}
+
+.duplicate-warning h2 {
+  color: #9a6500;
+  margin-bottom: 12px;
+}
+
+.duplicate-warning > p {
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.duplicate-card {
+  background: white;
+  padding: 16px;
+  border-radius: 9px;
+  margin-top: 12px;
+  border: 1px solid #f0d9a6;
+}
+
+.duplicate-card h3 {
+  margin-bottom: 12px;
+}
+
+.duplicate-card p {
+  margin: 7px 0;
+}
+
+
+/* CivicSignal AI Brand Colours */
+.brand-title {
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  margin: 0;
+}
+
+.brand-civic {
+  color: #2563EB;
+}
+
+.brand-ai {
+  color: #10B981;
+}
+
+.brand p {
+  color: #64748B;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  display: block;
+  width: 280px;
+  max-width: 45vw;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .brand-logo {
+    width: 210px;
+    max-width: 65vw;
+  }
+}
+
+.brand-title {
+  margin: 0;
+  font-weight: 800;
+}
+
+.brand-civic {
+  color: #2563EB;
+}
+
+.brand-ai {
+  color: #10B981;
+}
+
+.auth-switch button {
+  color: #2563EB;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.auth-switch button:hover {
+  color: #10B981;
+  text-decoration: underline;
+}
+
+/* =========================================
+   CIVICSIGNAL AI - RESPONSIVE UI ENHANCEMENT
+   Mobile | Tablet | Laptop | Desktop
+========================================= */
+
+/* Prevent horizontal scrolling */
+html {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Better image handling */
+img {
+  max-width: 100%;
+}
+
+/* Better form controls */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea,
+select {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Better focus visibility */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.3);
+  outline-offset: 2px;
+}
+
+/* =========================================
+   LAPTOP AND DESKTOP
+========================================= */
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1150px;
+    padding: 45px 30px;
+  }
+
+  .reports-section {
+    max-width: 1050px;
+  }
+
+  .analytics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =========================================
+   TABLET RESPONSIVENESS
+========================================= */
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 16px 4%;
+  }
+
+  .container {
+    padding: 30px 18px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .report-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .civic-issues-map {
+    height: 380px;
+  }
+
+  .form-card,
+  .result-card {
+    max-width: 100%;
+  }
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Navigation */
+  .navbar {
+    padding: 13px 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .brand-logo {
+    width: 175px;
+    max-width: 55vw;
+  }
+
+  .brand h2 {
+    font-size: 17px;
+  }
+
+  .brand p {
+    font-size: 10px;
+  }
+
+  .brand-icon {
+    font-size: 25px;
+  }
+
+  .logout-btn {
+    padding: 9px 13px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  /* Main container */
+  .container {
+    width: 100%;
+    padding: 22px 14px;
+  }
+
+  /* Hero section */
+  .hero {
+    padding: 28px 5px;
+  }
+
+  .hero h1 {
+    font-size: clamp(27px, 7vw, 34px);
+    line-height: 1.2;
+    margin: 15px 0;
+  }
+
+  .hero p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .tag {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  /* Statistics */
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: 18px 0;
+  }
+
+  .stat-card {
+    padding: 17px 10px;
+    border-radius: 10px;
+  }
+
+  .stat-card h3 {
+    font-size: 21px;
+  }
+
+  .stat-card p {
+    font-size: 12px;
+  }
+
+  /* Forms */
+  .form-card,
+  .result-card {
+    width: 100%;
+    padding: 20px 16px;
+    margin: 22px auto;
+    border-radius: 12px;
+  }
+
+  .form-card h2,
+  .result-card h2 {
+    font-size: 21px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  form label {
+    font-size: 13px;
+    margin: 15px 0 7px;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 13px 11px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  textarea {
+    min-height: 100px;
+  }
+
+  .input-row {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .primary-btn {
+    padding: 14px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  /* Messages */
+  .message {
+    width: 100%;
+    margin: 15px auto;
+    padding: 13px;
+    font-size: 13px;
+  }
+
+  /* Reports */
+  .reports-section {
+    width: 100%;
+    margin: 25px auto;
+    padding: 0 5px;
+  }
+
+  .reports-heading {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .reports-heading h2 {
+    font-size: 21px;
+  }
+
+  .refresh-btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .report-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .summary-card {
+    padding: 17px 10px;
+  }
+
+  .summary-card h3 {
+    font-size: 21px;
+  }
+
+  .summary-card p {
+    font-size: 12px;
+  }
+
+  .report-card {
+    padding: 17px 14px;
+    margin: 14px 0;
+  }
+
+  .report-card-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .report-card h3 {
+    font-size: 17px;
+  }
+
+  .report-card p {
+    font-size: 13px;
+    overflow-wrap: anywhere;
+  }
+
+  .status-badge {
+    font-size: 11px;
+  }
+
+  /* Authentication */
+  .auth-switch {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .auth-switch button {
+    font-size: 13px;
+  }
+
+  /* Map */
+  .issue-map-section {
+    margin: 20px 0;
+  }
+
+  .civic-issues-map {
+    height: 320px;
+    border-radius: 10px;
+  }
+
+  .map-legend {
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  /* Analytics */
+  .analytics-section {
+    margin: 22px 0;
+  }
+
+  .analytics-heading h2 {
+    font-size: 21px;
+  }
+
+  .analytics-heading p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .analytics-card {
+    padding: 15px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .analytics-card h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  /* Duplicate warning */
+  .duplicate-warning {
+    padding: 16px 12px;
+    margin: 18px 0;
+  }
+
+  .duplicate-warning h2 {
+    font-size: 18px;
+  }
+
+  .duplicate-warning > p {
+    font-size: 13px;
+  }
+
+  .duplicate-card {
+    padding: 13px;
+  }
+
+  .duplicate-card h3 {
+    font-size: 15px;
+  }
+
+  .duplicate-card p {
+    font-size: 12px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px 12px;
+    font-size: 11px;
+    line-height: 1.6;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE DEVICES
+========================================= */
+
+@media (max-width: 380px) {
+  .navbar {
+    padding: 12px 10px;
+  }
+
+  .brand-logo {
+    width: 145px;
+  }
+
+  .logout-btn {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .hero h1 {
+    font-size: 27px;
+  }
+
+  .stats,
+  .report-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .form-card,
+  .result-card {
+    padding: 17px 12px;
+  }
+
+  .civic-issues-map {
+    height: 280px;
+  }
+}
+
+/* =========================================
+   TOUCH-FRIENDLY INTERACTIONS
+========================================= */
+
+@media (hover: hover) {
+  .primary-btn,
+  .logout-btn,
+  .refresh-btn {
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .primary-btn:hover,
+  .refresh-btn:hover {
+    transform: translateY(-1px);
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* GPS MAP MOBILE RESPONSIVENESS */
+
+.issue-map-section {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.civic-issues-map {
+  width: 100% !important;
+  height: 420px !important;
+  min-height: 300px;
+  display: block;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.map-location-message {
+  margin: 12px 0;
+  padding: 10px;
+  background: #e8f1ff;
+  color: #1769d2;
+  border-radius: 7px;
+  font-size: 13px;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.leaflet-control-attribution {
+  font-size: 9px !important;
+}
+
+@media (max-width: 600px) {
+  .issue-map-section {
+    padding: 15px;
+  }
+
+  .civic-issues-map {
+    height: 350px !important;
+    min-height: 300px;
+  }
+
+  .map-legend {
+    gap: 10px;
+    font-size: 11px;
+  }
+}
