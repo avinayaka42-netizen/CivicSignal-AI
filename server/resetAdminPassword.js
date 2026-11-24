@@ -1,4 +1,3 @@
-
 import dns from "node:dns";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
